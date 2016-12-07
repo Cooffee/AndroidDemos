@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cooffee.myapplication.breakdown.BreakDownActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <TextView
+        android:id="@+id/tv_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:text="文件名"
+        android:textSize="@dimen/text_size_default"/>
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:progress="0"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:progressDrawable="@drawable/progressbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_height"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/download"
+            android:textSize="@dimen/text_size_default"
+            android:layout_height="@dimen/widget_height"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginRight="@dimen/margin_padding_s"
+            android:background="@drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:layout_marginRight="@dimen/margin_padding_default"
+            android:layout_marginLeft="@dimen/margin_padding_s"
+            android:layout_height="@dimen/widget_height"
+            android:background="@drawable/btn_default"/>
+
+    </LinearLayout>
+</LinearLayout>

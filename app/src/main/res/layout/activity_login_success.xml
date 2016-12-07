@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".thirdpartlogin.qq.QQLoginSuccessActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_padding_l"
+        android:text="登录成功"
+        android:textSize="@dimen/text_size_xl"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_height"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:text="@string/logout"
+        android:textSize="@dimen/text_size_l"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_default"/>
+</LinearLayout>
